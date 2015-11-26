@@ -72,7 +72,7 @@ td,th{
 }
 .cfirst_line{
     text-align: center;
-    border:solid grey 5px;
+    border:solid black 5px;
     background-color: grey;
     border-radius: 10px;
     padding: 20px 50px 20px;
@@ -83,7 +83,7 @@ td,th{
 .cseg_line{
     text-align: center;
     border:solid grey 5px;
-    background-color: grey;
+    background-color: black;
     border-radius: 10px;
     padding: 20px 50px 20px;
     margin: 20px 90px 10px;
@@ -92,7 +92,7 @@ td,th{
 }
 .cthe_line{
     text-align: center;
-    border:solid grey 5px;
+    border:solid black 5px;
     background-color: grey;
     border-radius: 10px;
     padding: 20px 50px 20px;
