@@ -47,8 +47,11 @@ body{
 nav{
     text-align: center;
 }
-
-
+nav>a:hover{
+    border: solid grey 5px;
+    background-color: black;
+    color: white;
+}
 nav>a{
     display: inlineblock;
     text-decoration: none;
@@ -99,6 +102,13 @@ td,th{
     margin: 20px 90px 10px;
     width: 300px;
     display:  inline-block;
+}
+li{
+    margin: auto;
+}
+#top{
+    float: right;
+    margin-top: -70px;
 }
 
 
