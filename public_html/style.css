@@ -52,6 +52,11 @@ nav>a:hover{
     background-color: black;
     color: white;
 }
+nav>a:active{
+    border: solid grey 5px;
+    background-color: black;
+    color: gray;
+}
 nav>a{
     display: inlineblock;
     text-decoration: none;
@@ -73,7 +78,23 @@ td,th{
     border: solid 3px;
     text-align: center;
 }
-.cfirst_line{
+.the_line:hover{
+    border: solid grey 5px;
+    background-color: black;
+    color: white;
+}
+.seg_line:hover{
+    border: solid black 5px;
+    background-color: grey;
+    color: white;
+}
+.first_line:hover{
+    border: solid grey 5px;
+    background-color: black;
+    color: white;
+}
+
+.first_line{
     text-align: center;
     border:solid black 5px;
     background-color: grey;
@@ -83,7 +104,7 @@ td,th{
     width: 300px;
     display:  inline-block;
 }
-.cseg_line{
+.seg_line{
     text-align: center;
     border:solid grey 5px;
     background-color: black;
@@ -93,7 +114,7 @@ td,th{
     width: 300px;
     display:  inline-block;
 }
-.cthe_line{
+.the_line{
     text-align: center;
     border:solid black 5px;
     background-color: grey;
