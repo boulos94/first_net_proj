@@ -4,13 +4,14 @@
 }
 body{
     background-image: url('B21.jpg');
+    background-attachment: fixed;
 }
 #wrapper1{
     margin: auto;
     width: 1200px;
     background: linear-gradient(transparent,black 120%);
     position: relative;
-    top:-10px ;
+    top:-70px ;
     text-align: center;
 }
 #wrapper2{
@@ -18,28 +19,28 @@ body{
     width: 1200px;
     background: linear-gradient(transparent,black 120%);
     position: relative;
-    top:-10px ;
+    top:-70px ;
 }
 #wrapper3{
     margin: auto;
     width: 1200px;
     background: linear-gradient(transparent,black 120%);
     position: relative;
-    top:-10px ;
+    top:-70px ;
 }
 #wrapper4{
     margin: auto;
     width: 1200px;
     background: linear-gradient(transparent,black 120%);
     position: relative;
-    top:-10px ;
+    top:-70px ;
 }
 #wrapper5{
     margin: auto;
     width: 1200px;
     background: linear-gradient(transparent,black 120%);
     position: relative;
-    top:-10px ;
+    top:-70px ;
 }
 #image{
    text-align: center; 
@@ -129,7 +130,12 @@ li{
 }
 #top{
     float: right;
-    margin-top: -70px;
+    margin-top: -100px;
+}
+.hipper{
+    position: relative;
+    margin: 0px;
+    display:  inline-block;
 }
 
 
