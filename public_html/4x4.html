@@ -7,6 +7,18 @@
         <script src="jquery-2.1.3.js"></script>
         <script>
             $(function(){
+              $('nav>a').css({
+                  "display": "inlineblock",
+                  "text-decoration": "none" ,
+                  "background-color": "grey" ,
+                  "border": "grey" ,
+                  "border-radius": "10px" ,
+                  "padding": "8px 10px" ,
+                  "margin": "20px 20px"
+              }) ;
+           });
+           
+            $(function(){
                $('.first_line').css({
                   "text-align":"center",
                   "border":"solid black 5px",
@@ -22,8 +34,8 @@
              $(function(){
                $('.seg_line').css({
                   "text-align":"center",
-                  "border":"solid black 5px",
-                  "background-color": "grey",
+                  "border":"solid grey 5px",
+                  "background-color": "black",
                   "border-radius": "10px",
                   "padding": "20px 50px 20px",
                   "margin": "20px 90px 10px",
@@ -94,7 +106,9 @@
                   "color": "white"
               });
            });
+           
          </script>
+         
     </head>
     <body onload="backgroundImg()">
          <div class="hipper">
@@ -109,13 +123,24 @@
         <div id="wrapper3">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
             <nav id="nav3">
-                <a href="index.html">Home</a>
-                <a href="cars.html">Cars</a>
-                <a href="4x4.html">4x4</a>
-                <a href="moto.html">Motorcycles</a>
-                <a href="boats.html">Boats</a>
+                <a href="index.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'" 
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Home</a>
+                <a href="cars.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Cars</a>
+                <a href="4x4.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">4x4</a>
+                <a href="moto.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Motorcycles</a>
+                <a href="boats.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Boats</a>
             </nav>
-            <div class="first_line">
+            <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
                 <p><img src="4x41.jpg" alt="4x41"/></p>
                 <pre>type: toyota tocoma
 year: 2016
@@ -125,7 +150,8 @@ cylinders: inline 4
 seating: 3
 price: 80$/day</pre>
             </div>
-            <div class="first_line">
+            <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
                 <p><img src="4x42.jpg" alt="4x42"/></p>
                 <pre>type: nissan frontier king
 year: 2016
@@ -135,7 +161,8 @@ cylinders: inline 4
 seating: 4
 price: 75$/day</pre>
             </div>
-            <div class="seg_line">
+            <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
+                 onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
                 <p><img src="4x43.jpg" alt="4x43"/></p>
                 <pre>type: jeep patriot
 year: 2016
@@ -145,7 +172,8 @@ cylinders: inline 4
 seating: 5
 price: 70$/day</pre>
             </div>
-            <div class="seg_line">
+            <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
+                 onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
                 <p><img src="4x44.jpg" alt="4x44"/></p>
                 <pre>type: chevrolet trax
 year: 2016
@@ -155,7 +183,8 @@ cylinders: inline 4
 seating: 5
 price: 85$/day</pre>
             </div>
-            <div class="the_line">
+            <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
                 <p><img src="4x45.jpg" alt="4x45"/></p>
                 <pre>type: subaru forester
 year: 2016
@@ -165,7 +194,8 @@ cylinders: flat 4
 seating: 5
 price: 65$/day</pre>
             </div>
-            <div class="the_line">
+            <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
                 <p><img src="4x46.jpg" alt="4x46"/></p>
                 <pre>type: kia sportege
 year: 2016

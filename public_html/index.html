@@ -80,6 +80,20 @@
                   "color": "white"
               });
            });
+           
+           $(function(){
+              $('nav>a').css({
+                  "display": "inlineblock",
+                  "text-decoration": "none" ,
+                  "background-color": "grey" ,
+                  "border": "grey" ,
+                  "border-radius": "10px" ,
+                  "padding": "8px 10px" ,
+                  "margin": "20px 20px"
+              }) ;
+           });
+           
+           
         </script>
     </head>
     <body onload="backgroundImg()">
@@ -95,12 +109,22 @@
         </div>
         <div id="wrapper1">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
-            <nav id="nav1">
-                <a href="index.html">Home</a>
-                <a href="cars.html">Cars</a>
-                <a href="4x4.html">4x4</a>
-                <a href="moto.html">Motorcycles</a>
-                <a href="boats.html">Boats</a>
+            <nav id="nav1" >
+                <a href="index.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'" 
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Home</a>
+                <a href="cars.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Cars</a>
+                <a href="4x4.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">4x4</a>
+                <a href="moto.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Motorcycles</a>
+                <a href="boats.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
+                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Boats</a>
             </nav>
             <div id="deal">
                 <h2>Deals & Offers</h2>
@@ -156,5 +180,6 @@
         </div>
        
         <p id="top"><a href="#" target="_top"><img src="top.png" alt="top" height="50" width="50"/></a></p>
+        
     </body>
 </html>
