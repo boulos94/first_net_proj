@@ -1,53 +1,4 @@
-*{
-    font-family: cursive;  
-    color: white;
-}
-body{
-    background-image: url('B21.jpg');
-    background-attachment: fixed;
-}
-#wrapper1{
-    margin: auto;
-    width: 1200px;
-    background: linear-gradient(transparent,black 120%);
-    position: relative;
-    top:-70px ;
-    text-align: center;
-}
-#wrapper2{
-    margin: auto;
-    width: 1200px;
-    background: linear-gradient(transparent,black 120%);
-    position: relative;
-    top:-70px ;
-}
-#wrapper3{
-    margin: auto;
-    width: 1200px;
-    background: linear-gradient(transparent,black 120%);
-    position: relative;
-    top:-70px ;
-}
-#wrapper4{
-    margin: auto;
-    width: 1200px;
-    background: linear-gradient(transparent,black 120%);
-    position: relative;
-    top:-70px ;
-}
-#wrapper5{
-    margin: auto;
-    width: 1200px;
-    background: linear-gradient(transparent,black 120%);
-    position: relative;
-    top:-70px ;
-}
-#image{
-   text-align: center; 
-}
-nav{
-    text-align: center;
-}
+
 nav>a:hover{
     border: solid grey 5px;
     background-color: black;
@@ -67,18 +18,7 @@ nav>a{
     padding: 8px 10px;
     margin: 20px 20px;
 }
-table{
-    border: solid 3px;
-    font-size: 15px;
-    border-collapse: collapse;
-    width: 500px;
-    margin: auto;
-    
-}
-td,th{
-    border: solid 3px;
-    text-align: center;
-}
+
 .the_line:hover{
     border: solid grey 5px;
     background-color: black;
@@ -95,48 +35,11 @@ td,th{
     color: white;
 }
 
-.first_line{
-    text-align: center;
-    border:solid black 5px;
-    background-color: grey;
-    border-radius: 10px;
-    padding: 20px 50px 20px;
-    margin: 20px 90px 10px;
-    width: 300px;
-    display:  inline-block;
-}
-.seg_line{
-    text-align: center;
-    border:solid grey 5px;
-    background-color: black;
-    border-radius: 10px;
-    padding: 20px 50px 20px;
-    margin: 20px 90px 10px;
-    width: 300px;
-    display:  inline-block;
-}
-.the_line{
-    text-align: center;
-    border:solid black 5px;
-    background-color: grey;
-    border-radius: 10px;
-    padding: 20px 50px 20px;
-    margin: 20px 90px 10px;
-    width: 300px;
-    display:  inline-block;
-}
-li{
-    margin: auto;
-}
-#top{
-    float: right;
-    margin-top: -100px;
-}
-.hipper{
-    position: relative;
-    margin: 0px;
-    display:  inline-block;
-}
+
+
+
+
+
 
 
 

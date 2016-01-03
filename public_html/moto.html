@@ -3,8 +3,100 @@
     <head>
         <title>moto</title>
         <link href="style.css" rel="stylesheet">
+        <script src="javaScript.js"></script>
+        <script src="jquery-2.1.3.js"></script>
+        <script>
+            $(function(){
+               $('.first_line').css({
+                  "text-align":"center",
+                  "border":"solid black 5px",
+                  "background-color": "grey",
+                  "border-radius": "10px",
+                  "padding": "20px 50px 20px",
+                  "margin": "20px 90px 10px",
+                  "width": "300px",
+                  "display":  "inline-block"
+               });
+            });
+            
+             $(function(){
+               $('.seg_line').css({
+                  "text-align":"center",
+                  "border":"solid black 5px",
+                  "background-color": "grey",
+                  "border-radius": "10px",
+                  "padding": "20px 50px 20px",
+                  "margin": "20px 90px 10px",
+                  "width": "300px",
+                  "display":  "inline-block"
+               });
+            });
+            
+             $(function(){
+               $('.the_line').css({
+                  "text-align":"center",
+                  "border":"solid black 5px",
+                  "background-color": "grey",
+                  "border-radius": "10px",
+                  "padding": "20px 50px 20px",
+                  "margin": "20px 90px 10px",
+                  "width": "300px",
+                  "display":  "inline-block"
+               });
+            });
+            
+            
+            $(function(){
+                $('#wrapper4').css({
+                    "margin": "auto",
+                    "width": "1200px",
+                    "background": "linear-gradient(transparent,black 120%)",
+                    "position": "relative",
+                    "top":"-70px" 
+                });
+            });
+            
+            function backgroundImg(){
+                $('body').css({
+                    "background-image":"url('B21.jpg')",
+                    "background-attachment": "fixed"
+                });
+            }
+            $(function(){
+               $('#image').css({
+                   "text-align": "center"
+               });
+            });
+            
+            $(function(){
+               $('nav').css({
+                   "text-align":"center"
+               }) ;
+            });
+             $(function(){
+               $('#top').css({
+                   "float": "right",
+                   "margin-top": "-100px"
+               });
+           });
+           
+           $(function(){
+               $('.hipper').css({
+                   "position": "relative",
+                   "margin": "0px",
+                   "display":  "inline-block"
+               });
+           });
+           
+           $(function(){
+              $('*').css({
+                  "font-family": "cursive" , 
+                  "color": "white"
+              });
+           });
+         </script>
       </head>
-    <body>
+    <body onload="backgroundImg()">
          <div class="hipper">
             <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
         </div>

@@ -4,8 +4,86 @@
     <head>
         <title>R.company</title>
         <link href="style.css" rel="stylesheet">
+        <script src="javaScript.js"></script>
+        <script src="jquery-2.1.3.js"></script>
+        <script>
+            function backgroundImg(){
+                $('body').css({
+                    "background-image":"url('B21.jpg')",
+                    "background-attachment": "fixed"
+                });
+            }
+            
+            $(function(){
+                $('#wrapper1').css({
+                    "margin": "auto",
+                    "width": "1200px",
+                    "background": "linear-gradient(transparent,black 120%)",
+                    "position": "relative",
+                    "top":"-70px" ,
+                    "text-align": "center"
+                });
+            });
+            
+            $(function(){
+               $('#image').css({
+                   "text-align": "center"
+               });
+            });
+            
+            $(function(){
+               $('nav').css({
+                   "text-align":"center"
+               }) ;
+            });
+             $(function(){
+                 $('table').css({
+                   "border": "solid 3px", 
+                   "font-size": "15px",
+                   "border-collapse": "collapse",
+                   "width": "500px",
+                   "margin": "auto"
+                });
+            });
+            
+            $(function(){
+               $('td,th').css({
+                   "border":"solid 3px",
+                   "text-align":"center"
+               }) ;
+            });
+            
+            $(function(){
+                $('li').css({
+                    "margin":"auto"
+                });
+            });
+           
+           $(function(){
+               $('#top').css({
+                   "float": "right",
+                   "margin-top": "-100px"
+               });
+           });
+           
+           $(function(){
+               $('.hipper').css({
+                   "position": "relative",
+                   "margin": "0px",
+                   "display":  "inline-block"
+               });
+           });
+           
+           $(function(){
+              $('*').css({
+                  "font-family": "cursive" , 
+                  "color": "white"
+              });
+           });
+        </script>
     </head>
-    <body>
+    <body onload="backgroundImg()">
+        
          <div class="hipper">
             <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
         </div>
