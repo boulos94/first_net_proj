@@ -106,17 +106,136 @@
                   "color": "white"
               });
            });
-         </script>
+           $(function(){
+              $('#boat').css({
+                  "background-color":"black",
+                  "border":"solid  grey 5px"
+              }) ;
+           });
+           $(function(){
+              $('#reg').css({
+                  "position":"relative",
+                  "top":"-70px",
+                  "text-align":"center"
+              }) ;
+           });
+           
+           var coloring;
+            function changeColor(){
+                coloring = window.setInterval(getColor, 2000);
+            }
+            function getColor(){
+                var color;
+                var rnd = Math.random();
+                if(rnd<0.34){
+                    color = "white";
+                }else if(rnd<0.67){
+                    color = "black";
+                }else {
+                    color = "grey";
+                }
+                document.getElementById("reg").style.color 
+                        = color;
+            }
+            var cImage;
+            function changeImage(){
+                cImage = window.setInterval(getImage1, 2000);
+                cImage = window.setInterval(getImage2, 2000);
+                cImage = window.setInterval(getImage3, 2000);
+                cImage = window.setInterval(getImage4, 2000);
+                cImage = window.setInterval(getImage5, 2000);
+                cImage = window.setInterval(getImage6, 2000);
+            }
+            function getImage1(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat1.jpg";
+                }else if(rnd<0.66){
+                    image = "b11.jpg";
+                }else if (rnd<0.99) {
+                    image = "b111.jpg";
+                }
+                document.getElementById("b1").src 
+                        = image;
+            }
+            function getImage2(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat2.jpg";
+                }else if(rnd<0.66){
+                    image = "b22.jpg";
+                }else if (rnd<0.99) {
+                    image = "b222.jpg";
+                }
+                document.getElementById("b2").src 
+                        = image;
+            }
+            function getImage3(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat3.jpg";
+                }else if(rnd<0.66){
+                    image = "b33.jpg";
+                }else if (rnd<0.99) {
+                    image = "b333.jpg";
+                }
+                document.getElementById("b3").src 
+                        = image;
+            }
+            function getImage4(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat4.jpg";
+                }else if(rnd<0.66){
+                    image = "b44.jpg";
+                }else if (rnd<0.99) {
+                    image = "b444.jpg";
+                }
+                document.getElementById("b4").src 
+                        = image;
+            }
+            function getImage5(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat5.jpg";
+                }else if(rnd<0.66){
+                    image = "b55.jpg";
+                }else if (rnd<0.99) {
+                    image = "b555.jpg";
+                }
+                document.getElementById("b5").src 
+                        = image;
+            }
+            function getImage6(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "boat6.jpg";
+                }else if(rnd<0.66){
+                    image = "b66.jpg";
+                }else if (rnd<0.99) {
+                    image = "b666.jpg";
+                }
+                document.getElementById("b6").src 
+                        = image;
+            }
+           </script>
+      
     </head>
-    <body onload="backgroundImg()">
+    <body onload="backgroundImg(),changeColor(),changeImage()">
          <div class="hipper">
-            <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
+            <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.instagram.com"><img src="insta.png" alt="instagram" height="50" width="50"/></a>
+            <img src="insta_1.png" alt="instagram" height="50" width="50" onclick="window.open('http://www.instagram.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.twitter.com"><img src="twit.png" alt="twitter" height="50" width="50"/></a>
+            <img src="twit_1.png" alt="twitter" height="50" width="50" onclick="window.open('http://www.twitter.com','_blank')"/>
         </div>
         <div id="wrapper5">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
@@ -134,12 +253,11 @@
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Motorcycles</a>
                 <a href="boats.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
-                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
-                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Boats</a>
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'" id="boat">Boats</a>
             </nav>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="boat1.jpg" alt="boat1" height="200" width="300"/></p>
+                <p><img id="b1" src="boat1.jpg" alt="boat1" height="200" width="300"   /></p>
                 <pre>type: Leah-Sofie
 year: 1988
 Boat Purpose: Leisure
@@ -150,7 +268,7 @@ price: 200$/day</pre>
             </div>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="boat2.jpg" alt="boat2" height="200" width="300"/></p>
+                <p><img id="b2" src="boat2.jpg" alt="boat2" height="200" width="300"/></p>
                 <pre>type: Anuha
 year: 2006
 Boat Purpose: Leisure
@@ -161,7 +279,7 @@ price: 400$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="boat3.jpg" alt="boat3" height="200" width="300"/></p>
+                <p><img id="b3" src="boat3.jpg" alt="boat3" height="200" width="300"/></p>
                 <pre>type: jeep patriot
 year: 2015
 Boat Purpose: Leisure
@@ -172,7 +290,7 @@ price: 550$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="boat4.jpg" alt="boat4" height="200" width="300"/></p>
+                <p><img id="b4" src="boat4.jpg" alt="boat4" height="200" width="300"/></p>
                 <pre>type: Elegant lines
 year: 2016
 Boat Purpose: Leisure
@@ -183,8 +301,8 @@ price: 550$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="boat5.jpg" alt="boat5" height="200" width="300"/></p>
-                <pre>type: Classic Timber ‘Pocket’ Schooner
+                <p><img id="b5" src="boat5.jpg" alt="boat5" height="200" width="300"/></p>
+                <pre>type: Classic Timber Pocket Schooner
 year: 2003
 Boat Purpose: Leisure
 Boat Hull: Mono
@@ -194,7 +312,7 @@ price: 400$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="boat6.jpg" alt="boat6" height="200" width="300"/></p>
+                <p><img id="b6" src="boat6.jpg" alt="boat6" height="200" width="300"/></p>
                 <pre>type: Recreational rowing
 year: 2014
 Boat Purpose: Leisure
@@ -205,5 +323,6 @@ price: 150$/day</pre>
             </div>
         </div>
          <p id="top"><a href="#" target="_top"><img src="top.png" alt="top" height="50" width="50"/></a></p>
+         <p id="reg"> CBB&REG rent</p>;
     </body>
 </html>

@@ -106,17 +106,134 @@
                   "color": "white"
               });
            });
+           $(function(){
+              $('#car').css({
+                  "background-color":"black",
+                  "border":"solid  grey 5px"
+              }) ;
+           });
+           var coloring;
+            function changeColor(){
+                coloring = window.setInterval(getColor, 2000);
+            }
+            function getColor(){
+                var color;
+                var rnd = Math.random();
+                if(rnd<0.34){
+                    color = "white";
+                }else if(rnd<0.67){
+                    color = "black";
+                }else {
+                    color = "grey";
+                }
+                document.getElementById("reg").style.color 
+                        = color;
+            }
+            $(function(){
+              $('#reg').css({
+                  "position":"relative",
+                  "top":"-70px",
+                  "text-align":"center"
+              }) ;
+           });
+           var cImage;
+            function changeImage(){
+                cImage = window.setInterval(getImage1, 2000);
+                cImage = window.setInterval(getImage2, 2000);
+                cImage = window.setInterval(getImage3, 2000);
+                cImage = window.setInterval(getImage4, 2000);
+                cImage = window.setInterval(getImage5, 2000);
+                cImage = window.setInterval(getImage6, 2000);
+            }
+            function getImage1(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car1.jpg";
+                }else if(rnd<0.66){
+                    image = "c1.jpg";
+                }else if (rnd<0.99) {
+                    image = "c11.jpg";
+                }
+                document.getElementById("c1").src 
+                        = image;
+            }
+            function getImage2(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car2.jpg";
+                }else if(rnd<0.66){
+                    image = "c2.jpg";
+                }else if (rnd<0.99) {
+                    image = "c22.jpg";
+                }
+                document.getElementById("c2").src 
+                        = image;
+            }
+            function getImage3(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car3.jpg";
+                }else if(rnd<0.66){
+                    image = "c3.jpg";
+                }else if (rnd<0.99) {
+                    image = "c33.jpg";
+                }
+                document.getElementById("c3").src 
+                        = image;
+            }
+            function getImage4(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car4.jpg";
+                }else if(rnd<0.66){
+                    image = "c4.jpg";
+                }else if (rnd<0.99) {
+                    image = "c44.jpg";
+                }
+                document.getElementById("c4").src 
+                        = image;
+            }
+            function getImage5(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car5.jpg";
+                }else if(rnd<0.66){
+                    image = "c5.jpg";
+                }else if (rnd<0.99) {
+                    image = "c55.jpg";
+                }
+                document.getElementById("c5").src 
+                        = image;
+            }
+            function getImage6(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "car6.jpg";
+                }else if(rnd<0.66){
+                    image = "c6.jpg";
+                }else if (rnd<0.99) {
+                    image = "c66.jpg";
+                }
+                document.getElementById("b6").src 
+                        = image;
+            }
         </script>
     </head>
-    <body onload="backgroundImg()">
+    <body onload="backgroundImg(),changeColor(),changeImage()">
          <div class="hipper">
-            <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
+            <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.instagram.com"><img src="insta.png" alt="instagram" height="50" width="50"/></a>
+            <img src="insta_1.png" alt="instagram" height="50" width="50" onclick="window.open('http://www.instagram.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.twitter.com"><img src="twit.png" alt="twitter" height="50" width="50"/></a>
+            <img src="twit_1.png" alt="twitter" height="50" width="50" onclick="window.open('http://www.twitter.com','_blank')"/>
         </div>
          <div id="wrapper2">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
@@ -125,8 +242,7 @@
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'" 
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Home</a>
                 <a href="cars.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
-                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
-                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Cars</a>
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'" id="car">Cars</a>
                 <a href="4x4.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">4x4</a>
@@ -139,7 +255,7 @@
             </nav>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="car1.jpg" alt="car1"/></p>
+                <p><img id="c1" src="car1.jpg" alt="car1" height="200" width="300"/></p>
                 <pre>type: nissan versa
 year: 2016
 transmission: 5-speed manual
@@ -150,7 +266,7 @@ price: 35$/day</pre>
             </div>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="car2.jpg" alt="car2"/></p>
+                <p><img id="c2" src="car2.jpg" alt="car2" height="200" width="300"/></p>
                 <pre>type: kia rio
 year: 2016
 transmission: 6-speed manual
@@ -161,7 +277,7 @@ price: 30$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="car3.jpg" alt="car3"/></p>
+                <p><img id="c3" src="car3.jpg" alt="car3" height="200" width="300"/></p>
                 <pre>type: chevrolet sonic
 year: 2016
 transmission: 5-speed manual
@@ -172,7 +288,7 @@ price: 40$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="car4.jpg" alt="car4"/></p>
+                <p><img id="c4" src="car4.jpg" alt="car4" height="200" width="300"/></p>
                 <pre>type: nissan sentra
 year: 2016
 transmission: 6-speed manual
@@ -183,7 +299,7 @@ price: 35$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="car5.jpg" alt="car5"/></p>
+                <p><img id="c5" src="car5.jpg" alt="car5" height="200" width="300"/></p>
                 <pre>type: chevrolet cruse
 year: 2016
 transmission: 6-speed manual
@@ -194,7 +310,7 @@ price: 45$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="car6.jpg" alt="car6"/></p>
+                <p><img id="c6" src="car6.jpg" alt="car6" height="200" width="300"/></p>
                 <pre>type: mitsubishi lancer
 year: 2016
 transmission: 5-speed manual
@@ -205,5 +321,6 @@ price: 45$/day</pre>
             </div>
         </div>
          <p id="top"><a href="#" target="_top"><img src="top.png" alt="top" height="50" width="50"/></a></p>
+         <p id="reg"> CBB&REG rent</p>;
     </body>
 </html>

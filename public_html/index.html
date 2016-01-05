@@ -93,26 +93,54 @@
               }) ;
            });
            
-           
+           $(function(){
+              $('#home').css({
+                  "background-color":"black",
+                  "border":"solid  grey 5px"
+              }) ;
+           });
+           var coloring;
+            function changeColor(){
+                coloring = window.setInterval(getColor, 2000);
+            }
+            function getColor(){
+                var color;
+                var rnd = Math.random();
+                if(rnd<0.34){
+                    color = "white";
+                }else if(rnd<0.67){
+                    color = "black";
+                }else {
+                    color = "grey";
+                }
+                document.getElementById("reg").style.color 
+                        = color;
+            }
+           $(function(){
+              $('#reg').css({
+                  "position":"relative",
+                  "top":"-70px",
+                  "text-align":"center"
+              }) ;
+           });
         </script>
     </head>
     <body onload="backgroundImg()">
         
          <div class="hipper">
-            <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
+            <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.instagram.com"><img src="insta.png" alt="instagram" height="50" width="50"/></a>
+            <img src="insta_1.png" alt="instagram" height="50" width="50" onclick="window.open('http://www.instagram.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.twitter.com"><img src="twit.png" alt="twitter" height="50" width="50"/></a>
+            <img src="twit_1.png" alt="twitter" height="50" width="50" onclick="window.open('http://www.twitter.com','_blank')"/>
         </div>
         <div id="wrapper1">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
             <nav id="nav1" >
                 <a href="index.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
-                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'" 
-                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Home</a>
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'" id="home">Home</a>
                 <a href="cars.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Cars</a>
@@ -180,6 +208,7 @@
         </div>
        
         <p id="top"><a href="#" target="_top"><img src="top.png" alt="top" height="50" width="50"/></a></p>
+        <p id="reg"> CBB&REG rent</p>;
         
     </body>
 </html>

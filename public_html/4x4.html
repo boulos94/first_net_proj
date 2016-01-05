@@ -106,19 +106,135 @@
                   "color": "white"
               });
            });
-           
+           $(function(){
+              $('#4x4').css({
+                  "background-color":"black",
+                  "border":"solid  grey 5px"
+              }) ;
+           });
+           var coloring;
+            function changeColor(){
+                coloring = window.setInterval(getColor, 2000);
+            }
+            function getColor(){
+                var color;
+                var rnd = Math.random();
+                if(rnd<0.34){
+                    color = "white";
+                }else if(rnd<0.67){
+                    color = "black";
+                }else {
+                    color = "grey";
+                }
+                document.getElementById("reg").style.color 
+                        = color;
+            }
+            $(function(){
+              $('#reg').css({
+                  "position":"relative",
+                  "top":"-70px",
+                  "text-align":"center"
+              }) ;
+           });
+           var cImage;
+            function changeImage(){
+                cImage = window.setInterval(getImage1, 2000);
+                cImage = window.setInterval(getImage2, 2000);
+                cImage = window.setInterval(getImage3, 2000);
+                cImage = window.setInterval(getImage4, 2000);
+                cImage = window.setInterval(getImage5, 2000);
+                cImage = window.setInterval(getImage6, 2000);
+            }
+            function getImage1(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x41.jpg";
+                }else if(rnd<0.66){
+                    image = "41.jpg";
+                }else if (rnd<0.99) {
+                    image = "411.jng";
+                }
+                document.getElementById("41").src 
+                        = image;
+            }
+            function getImage2(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x42.jpg";
+                }else if(rnd<0.66){
+                    image = "42.jpg";
+                }else if (rnd<0.99) {
+                    image = "422.jpg";
+                }
+                document.getElementById("42").src 
+                        = image;
+            }
+            function getImage3(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x43.jpg";
+                }else if(rnd<0.66){
+                    image = "43.jpg";
+                }else if (rnd<0.99) {
+                    image = "433.jpg";
+                }
+                document.getElementById("43").src 
+                        = image;
+            }
+            function getImage4(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x44.jpg";
+                }else if(rnd<0.66){
+                    image = "44.jpg";
+                }else if (rnd<0.99) {
+                    image = "444.jpg";
+                }
+                document.getElementById("44").src 
+                        = image;
+            }
+            function getImage5(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x45.jpg";
+                }else if(rnd<0.66){
+                    image = "45.jpg";
+                }else if (rnd<0.99) {
+                    image = "455.jpg";
+                }
+                document.getElementById("45").src 
+                        = image;
+            }
+            function getImage6(){
+                var image;
+                var rnd = Math.random();
+                if(rnd<0.33){
+                    image = "4x46.jpg";
+                }else if(rnd<0.66){
+                    image = "46.jpg";
+                }else if (rnd<0.99) {
+                    image = "466.jpg";
+                }
+                document.getElementById("46").src 
+                        = image;
+            }
          </script>
          
     </head>
-    <body onload="backgroundImg()">
+    <body onload="backgroundImg(),changeColor(),changeImage()">
          <div class="hipper">
-            <a href="http://www.facebook.com"><img src="face.png" alt="facebook" height="50" width="50"/></a>
+            <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.instagram.com"><img src="insta.png" alt="instagram" height="50" width="50"/></a>
+            <img src="insta_1.png" alt="instagram" height="50" width="50" onclick="window.open('http://www.instagram.com','_blank')"/>
         </div>
          <div class="hipper">
-            <a href="http://www.twitter.com"><img src="twit.png" alt="twitter" height="50" width="50"/></a>
+            <img src="twit_1.png" alt="twitter" height="50" width="50" onclick="window.open('http://www.twitter.com','_blank')"/>
         </div>
         <div id="wrapper3">
             <p id="image"><img src="logo.png" alt="C.logo" height="300" width="300"/></p>
@@ -130,8 +246,7 @@
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Cars</a>
                 <a href="4x4.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
-                 onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
-                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">4x4</a>
+                 onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'" id="4x4">4x4</a>
                 <a href="moto.html" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid grey 0px'"
                  onmousedown="this.style.color='grey'" onmouseup="this.style.color='white'">Motorcycles</a>
@@ -141,7 +256,7 @@
             </nav>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="4x41.jpg" alt="4x41"/></p>
+                <p><img id="41" src="4x41.jpg" alt="4x41" height="200" width="300"/></p>
                 <pre>type: toyota tocoma
 year: 2016
 transmission: 5-speed manual
@@ -152,7 +267,7 @@ price: 80$/day</pre>
             </div>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="4x42.jpg" alt="4x42"/></p>
+                <p><img id="42"  src="4x42.jpg" alt="4x42" height="200" width="300"/></p>
                 <pre>type: nissan frontier king
 year: 2016
 transmission: 6-speed manual
@@ -163,7 +278,7 @@ price: 75$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="4x43.jpg" alt="4x43"/></p>
+                <p><img id="43" src="4x43.jpg" alt="4x43" height="200" width="300"/></p>
                 <pre>type: jeep patriot
 year: 2016
 transmission: 5-speed manual
@@ -174,7 +289,7 @@ price: 70$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img src="4x44.jpg" alt="4x44"/></p>
+                <p><img id="44" src="4x44.jpg" alt="4x44" height="200" width="300"/></p>
                 <pre>type: chevrolet trax
 year: 2016
 transmission: 5-speed manual
@@ -185,7 +300,7 @@ price: 85$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="4x45.jpg" alt="4x45"/></p>
+                <p><img id="45" src="4x45.jpg" alt="4x45" height="200" width="300"/></p>
                 <pre>type: subaru forester
 year: 2016
 transmission: 6-speed manual
@@ -196,7 +311,7 @@ price: 65$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img src="4x46.jpg" alt="4x46"/></p>
+                <p><img id="46" src="4x46.jpg" alt="4x46" height="200" width="300"/></p>
                 <pre>type: kia sportege
 year: 2016
 transmission: 5-speed shiftable automatic
@@ -207,5 +322,6 @@ price: 85$/day</pre>
             </div>
         </div>
          <p id="top"><a href="#" target="_top"><img src="top.png" alt="top" height="50" width="50"/></a></p>
+         <p id="reg"> CBB&REG rent</p>;
     </body>
 </html>
