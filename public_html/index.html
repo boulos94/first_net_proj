@@ -99,23 +99,7 @@
                   "border":"solid  grey 5px"
               }) ;
            });
-           var coloring;
-            function changeColor(){
-                coloring = window.setInterval(getColor, 2000);
-            }
-            function getColor(){
-                var color;
-                var rnd = Math.random();
-                if(rnd<0.34){
-                    color = "white";
-                }else if(rnd<0.67){
-                    color = "black";
-                }else {
-                    color = "grey";
-                }
-                document.getElementById("reg").style.color 
-                        = color;
-            }
+           
            $(function(){
               $('#reg').css({
                   "position":"relative",
@@ -125,7 +109,7 @@
            });
         </script>
     </head>
-    <body onload="backgroundImg()">
+    <body onload="backgroundImg(),changeColor()">
         
          <div class="hipper">
             <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>

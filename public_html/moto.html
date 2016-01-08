@@ -112,23 +112,7 @@
                   "border":"solid  grey 5px"
               }) ;
            });
-           var coloring;
-            function changeColor(){
-                coloring = window.setInterval(getColor, 2000);
-            }
-            function getColor(){
-                var color;
-                var rnd = Math.random();
-                if(rnd<0.34){
-                    color = "white";
-                }else if(rnd<0.67){
-                    color = "black";
-                }else {
-                    color = "grey";
-                }
-                document.getElementById("reg").style.color 
-                        = color;
-            }
+          
             $(function(){
               $('#reg').css({
                   "position":"relative",
@@ -136,93 +120,7 @@
                   "text-align":"center"
               }) ;
            });
-           var cImage;
-            function changeImage(){
-                cImage = window.setInterval(getImage1, 2000);
-                cImage = window.setInterval(getImage2, 2000);
-                cImage = window.setInterval(getImage3, 2000);
-                cImage = window.setInterval(getImage4, 2000);
-                cImage = window.setInterval(getImage5, 2000);
-                cImage = window.setInterval(getImage6, 2000);
-            }
-            function getImage1(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto1.jpg";
-                }else if(rnd<0.66){
-                    image = "m1.jpg";
-                }else if (rnd<0.99) {
-                    image = "m11.jpg";
-                }
-                document.getElementById("m1").src 
-                        = image;
-            }
-            function getImage2(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto2.jpg";
-                }else if(rnd<0.66){
-                    image = "m2.jpg";
-                }else if (rnd<0.99) {
-                    image = "m22.jpg";
-                }
-                document.getElementById("m2").src 
-                        = image;
-            }
-            function getImage3(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto3.jpg";
-                }else if(rnd<0.66){
-                    image = "m3.jpg";
-                }else if (rnd<0.99) {
-                    image = "m33.jpg";
-                }
-                document.getElementById("m3").src 
-                        = image;
-            }
-            function getImage4(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto4.jpg";
-                }else if(rnd<0.66){
-                    image = "m4.jpg";
-                }else if (rnd<0.99) {
-                    image = "m44.jpg";
-                }
-                document.getElementById("m4").src 
-                        = image;
-            }
-            function getImage5(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto5.jpg";
-                }else if(rnd<0.66){
-                    image = "m5.jpg";
-                }else if (rnd<0.99) {
-                    image = "m55.jpg";
-                }
-                document.getElementById("m5").src 
-                        = image;
-            }
-            function getImage6(){
-                var image;
-                var rnd = Math.random();
-                if(rnd<0.33){
-                    image = "moto6.jpg";
-                }else if(rnd<0.66){
-                    image = "m6.jpg";
-                }else if (rnd<0.99) {
-                    image = "m66.jpg";
-                }
-                document.getElementById("m6").src 
-                        = image;
-            }
+           
          </script>
       </head>
     <body onload="backgroundImg(),changeColor(),changeImage()">
@@ -255,7 +153,7 @@
             </nav>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img id="m1" src="moto1.jpg" alt="moto1" height="200" width="300"/></p>
+                <p><a id="sm1" href="moto1.jpg"><img id="m1" src="moto1.jpg" alt="moto1" height="200" width="300"/></a></p>
                 <pre>type: Harley-Davidson Road Glide Ultra
 year: 2016
 transmission: 6-Speed Cruise Drive
@@ -266,7 +164,7 @@ price: 65$/day</pre>
             </div>
             <div class="first_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img id="m2" src="moto2.jpg" alt="moto2" height="200" width="300"/></p>
+                <p><a id="sm2" href="moto2.jpg"><img id="m2" src="moto2.jpg" alt="moto2" height="200" width="300"/></a></p>
                 <pre>type: Ducati 1299 Panigale S
 year: 2015
 transmission: 6-speed with Quick Shift 
@@ -278,7 +176,7 @@ price: 90$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img id="m3" src="moto3.jpg" alt="moto3" height="200" width="300"/></p>
+                <p><a id="sm3" href="moto3.jpg"><img id="m3" src="moto3.jpg" alt="moto3" height="200" width="300"/></a></p>
                 <pre>type:  Aprilia Tuono V4 1100 RR
 year: 2015
 transmission: 6-speed
@@ -289,7 +187,7 @@ price: 90$/day</pre>
             </div>
             <div class="seg_line" onmouseover="this.style.backgroundColor='grey',this.style.border='solid black 5px'"
                  onmouseout="this.style.backgroundColor='black',this.style.border='solid grey 5px'">
-                <p><img id="m4" src="moto4.jpg" alt="moto4" height="200" width="300"/></p>
+                <p><a id="sm4" href="moto4.jpg"><img id="m4" src="moto4.jpg" alt="moto4" height="200" width="300"/></a></p>
                 <pre>type: Suzuki DR-Z400S
 year: 2015
 transmission: 5-speed constant mesh
@@ -300,7 +198,7 @@ price: 45$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img id="m5" src="moto5.jpg" alt="moto5" height="200" width="300"/></p>
+                <p><a id="sm5" href="moto5.jpg"><img id="m5" src="moto5.jpg" alt="moto5" height="200" width="300"/></a></p>
                 <pre>type: Harley-Davidson Sportster
  883 Low – XL883L
 year: 2015
@@ -312,7 +210,7 @@ price: 65$/day</pre>
             </div>
             <div class="the_line" onmouseover="this.style.backgroundColor='black',this.style.border='solid grey 5px'"
                  onmouseout="this.style.backgroundColor='grey',this.style.border='solid black 5px'">
-                <p><img id="m6" src="moto6.jpg" alt="moto6" height="200" width="300"/></p>
+                <p><a id="sm6" href="moto6.jpg"><img id="m6" src="moto6.jpg" alt="moto6" height="200" width="300"/></a></p>
                 <pre>type: Kawasaki Z800 ABS First Ride Review
 year: 2016
 transmission: 6-speed 
