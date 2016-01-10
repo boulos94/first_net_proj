@@ -7,6 +7,12 @@
         <script src="javaScript.js"></script>
         <script src="jquery-2.1.3.js"></script>
         <script>
+            $(function(){
+               $('#personaPage').css({
+                   "position": "relative",
+                   "float":"right"
+               }) ;
+            });
             function backgroundImg(){
                 $('body').css({
                     "background-image":"url('B21.jpg')",
@@ -110,7 +116,7 @@
         </script>
     </head>
     <body onload="backgroundImg(),changeColor()">
-        
+        <p><a href="personalPage.html" id="personaPage">Personal Page</a></p>
          <div class="hipper">
             <img src="download.png" alt="facebook" height="50" width="50" onclick="window.open('http://www.facebook.com','_blank')"/>
         </div>
@@ -157,7 +163,7 @@
                     <li>city mal</li>
                     <li>tripoli (douwar abou alie)</li>
                 </ol>
-                <p>And more , for info contact us</p>
+                <p>And more , for info contact us by clicking on one of this mail below</p>
             </div>
             <div id="support">
                 <h2>Support</h2>
@@ -173,17 +179,17 @@
                     <tbody>
                         <tr>
                             <td>Boulos BOULOS</td>
-                            <td>b_o_u_l_o_s@hotmail.com</td>
+                            <td><a href="mailto:b_o_u_l_o_s@hotmail.com">b_o_u_l_o_s@hotmail.com</a></td>
                             <td>jounieh</td>
                         </tr>
                         <tr>
                             <td>Joelle MACHALANI</td>
-                            <td>joelle_MACH@gmail.com</td>
+                            <td><a href="mailto:joelle_mach@gmail.com">joelle_MACH@gmail.com</a></td>
                             <td>balloune</td>
                         </tr>
                         <tr>
                             <td>Eddy GHABACH</td>
-                            <td>eddy-gabach@hotmail.com</td>
+                            <td><a href="mailto:eddy-gabach@hotmail.com">eddy-gabach@hotmail.com</a></td>
                             <td>chmel</td>
                         </tr>
                     </tbody>

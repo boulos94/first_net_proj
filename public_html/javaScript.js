@@ -411,3 +411,7 @@
                 document.getElementById("reg").style.color 
                         = color;
             }
+function getName(){
+   var name = window.prompt("enter your name","name");
+   document.getElementById("name").innerHTML ="welcome "+name;
+}

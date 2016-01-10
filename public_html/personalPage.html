@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Personal page</title>
+        <meta charset="UTF-8">
+        <script src="javaScript.js"></script>
+        <script src="jquery-2.1.3.js"></script>
+        <script> 
+           $(function(){
+              $("#name").css({
+                 "font-family": "cursive",
+                 "color":"grey",
+                 "font-size":"18px"
+              });
+          });
+          function setI(){
+              var x= document.getElementById("myImage").value;
+              if (x==="4x4"){
+                  $("body").css({"background-image":"url('c4x4.jpg')"});
+              }else if (x==="boat"){
+                  $("body").css({"background-image":"url('cboat_1.jpg')"});
+              }else  if (x==="car"){
+                  $("body").css({"background-image":"url('ccar.jpg')"});
+              }  else {
+                  $("body").css({"background-image":"url('cmoto.jpg')"});
+              }      
+          };
+          function style1(){
+             $("#txta").css({
+                 "color":"red",
+                 "backgroundColor":"black"
+             }); 
+          };
+          function style2(){
+             $("#txta").css({
+                 "color":"black",
+                 "backgroundColor":"grey"
+             }); 
+          };
+          $(function(){
+              $("#mydiv").css({
+                 "margin":"auto",
+                 "width": "1200px",
+                 "position": "relative",
+                 "text-align":"center"
+              });
+          });
+        </script>
+    </head>
+    <body  onload="getName()">
+        <div id="mydiv">
+        <p id="name"></p>
+        <select id="myImage">
+            <option>4x4</option>
+            <option>boat</option>
+            <option>car</option>
+            <option>motor</option>
+        </select>
+        <input type="button" value="set as background pic" onclick="setI()"/><br>
+        <textarea id="txta"></textarea><br>
+        <input type="button" value="style 1" onclick="style1()"/>
+        <input type="button" value="style 2" onclick="style2()"/>
+        </div>
+        
+          
+        
+    </body>
+</html>
